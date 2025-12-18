@@ -1,29 +1,26 @@
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Button } from '@/components/ui/button'
+import { Inter } from 'next/font/google'
+import { Header } from '@/components/header'
+import { ThemeProvider } from '@/components/theme-provider'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  weight: ['400', '600'],
 })
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
     >
-      <div className="flex flex-col gap-2">
-        <Button>Button</Button>
-
-        <Button variant="default">default</Button>
-        <Button variant="destructive">destructive</Button>
-        <Button variant="outline">outline</Button>
-        <Button variant="secondary">secondary</Button>
+      <div
+        className={`${inter.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
+      >
+        <Header />
       </div>
-    </div>
+    </ThemeProvider>
   )
 }
