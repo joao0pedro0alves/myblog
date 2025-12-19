@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ActiveLink } from '../active-link/active-link'
+import { Logo } from '../logo'
 import { ModeToggle } from '../theme-provider/mode-toggle'
 import { Button } from '../ui/button'
 
@@ -9,14 +9,7 @@ export function Header() {
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-background/95 backdrop-blur supports-[backdrop-filters]:bg-background/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/">
-            <Image
-              src="/assets/site-set-logo.svg"
-              height={32}
-              width={115}
-              alt="Site Set"
-            />
-          </Link>
+          <Logo />
 
           <nav className="flex items-center gap-6">
             <ActiveLink href="/">Home</ActiveLink>
