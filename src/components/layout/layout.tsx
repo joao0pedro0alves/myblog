@@ -15,7 +15,7 @@ export function Layout({ children }: LayoutProps) {
       enableSystem
       disableTransitionOnChange
     >
-      <div className="relative flex flex-col min-h-screen dark">
+      <div className="relative flex flex-col min-h-screen">
         <Header />
 
         <main className="flex-1 flex-col flex">{children}</main>

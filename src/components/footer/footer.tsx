@@ -9,13 +9,13 @@ export function Footer() {
           <Logo />
 
           <nav className="flex flex-col md:flex-row gap-3 md:gap-8">
-            <Link className="text-blue-200" href="/termos-de-uso">
+            <Link className="text-blue-100" href="/termos-de-uso">
               Termos de uso
             </Link>
-            <Link className="text-blue-200" href="/privacidade">
+            <Link className="text-blue-100" href="/privacidade">
               Politica de Privacidade
             </Link>
-            <Link className="text-blue-200" href="/enviar-feedback">
+            <Link className="text-blue-100" href="/enviar-feedback">
               Enviar feedback
             </Link>
           </nav>
