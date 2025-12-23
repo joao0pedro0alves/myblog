@@ -1,23 +1,25 @@
 import { Inter, PT_Sans_Caption } from 'next/font/google'
-import { Header } from '@/components/header'
+import { HeroSection } from '@/components/sections/hero-section'
 
 const ptSansCaption = PT_Sans_Caption({
-  variable: '--font-title',
+  variable: '--font-sans',
   subsets: ['latin'],
   weight: ['700'],
 })
 
 const inter = Inter({
-  variable: '--font-sans',
+  variable: '--font-inter',
   subsets: ['latin'],
 })
 
 export default function Home() {
   return (
     <div
-      className={`${inter.className} ${ptSansCaption.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
+      className={`${inter.className} ${ptSansCaption.className} bg-zinc-50 font-inter dark:bg-black`}
     >
-      <Header />
+      <article className="flex flex-col">
+        <HeroSection />
+      </article>
     </div>
   )
 }
