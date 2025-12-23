@@ -1,4 +1,5 @@
 import { Inter, PT_Sans_Caption } from 'next/font/google'
+import { CustomerStorySection } from '@/components/sections/customer-story-section'
 import { FeatureSection } from '@/components/sections/feature-section'
 import { HeroSection } from '@/components/sections/hero-section'
 import { SupportSection } from '@/components/sections/support-section'
@@ -21,8 +22,12 @@ export default function Home() {
     >
       <article className="flex flex-col">
         <HeroSection />
+
         <FeatureSection />
+
         <SupportSection />
+
+        <CustomerStorySection />
       </article>
     </div>
   )
