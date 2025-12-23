@@ -22,7 +22,7 @@ export function ActiveLink({ children, href, ...rest }: ActiveLinkProps) {
         'text-sm font-medium transition-colors hover:text-blue-200',
         isCurrentPath
           ? 'text-blue-200'
-          : 'text-muted-foreground dark:text-gray-100'
+          : 'text-muted-foreground dark:text-gray-100',
       )}
       {...rest}
     >

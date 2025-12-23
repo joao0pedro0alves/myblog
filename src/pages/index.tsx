@@ -1,4 +1,5 @@
 import { Inter, PT_Sans_Caption } from 'next/font/google'
+import { CallToAction } from '@/components/sections/call-to-action'
 import { CustomerStorySection } from '@/components/sections/customer-story-section'
 import { FeatureSection } from '@/components/sections/feature-section'
 import { HeroSection } from '@/components/sections/hero-section'
@@ -28,6 +29,8 @@ export default function Home() {
         <SupportSection />
 
         <CustomerStorySection />
+
+        <CallToAction />
       </article>
     </div>
   )
