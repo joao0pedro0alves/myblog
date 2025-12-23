@@ -1,4 +1,5 @@
 import { Inter, PT_Sans_Caption } from 'next/font/google'
+import { FeatureSection } from '@/components/sections/feature-section'
 import { HeroSection } from '@/components/sections/hero-section'
 
 const ptSansCaption = PT_Sans_Caption({
@@ -19,6 +20,7 @@ export default function Home() {
     >
       <article className="flex flex-col">
         <HeroSection />
+        <FeatureSection />
       </article>
     </div>
   )
