@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start --webpack",
     "lint": "biome check",
     "format": "biome format --write"
   },
@@ -14,8 +14,10 @@
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "contentlayer": "^0.3.4",
     "lucide-react": "^0.562.0",
     "next": "16.1.0",
+    "next-contentlayer": "^0.3.4",
     "next-themes": "^0.4.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
