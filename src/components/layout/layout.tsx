@@ -28,7 +28,7 @@ export function Layout({ children }: LayoutProps) {
       disableTransitionOnChange
     >
       <div
-        className={`${inter.className} ${ptSansCaption.className} bg-zinc-50 font-inter dark:bg-black relative flex flex-col min-h-screen`}
+        className={`${inter.className} ${ptSansCaption.className} bg-zinc-50 font-inter dark:bg-black relative flex flex-col min-h-screen text-body-sm`}
       >
         <Header />
 

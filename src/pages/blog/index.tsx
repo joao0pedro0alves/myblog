@@ -1,5 +1,5 @@
-import { BlogList } from '@/templates/blog'
+import { Blog } from '@/templates/blog'
 
 export default function BlogPage() {
-  return <BlogList />
+  return <Blog />
 }
