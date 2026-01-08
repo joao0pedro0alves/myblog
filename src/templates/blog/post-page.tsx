@@ -1,4 +1,4 @@
-import { allPosts } from 'contentlayer/generated'
+import type { Post } from 'contentlayer/generated'
 import { InboxIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,12 +16,14 @@ import { Button } from '@/components/ui/button'
 
 import { useShare } from '@/hooks'
 
-export function PostPage() {
-  const router = useRouter()
+export type PostPageProps = {
+  post: Post
+}
 
+export function PostPage({ post }: PostPageProps) {
+  const router = useRouter()
   const slug = router.query.slug as string
 
-  const post = allPosts.find((post) => post.slug === slug)
   const postUrl = `https://site.set/blog/${slug}`
 
   const { shareButtons } = useShare({
