@@ -1,8 +1,8 @@
 import {
   AtSign,
   Facebook,
-  Link2Icon,
   Linkedin,
+  LinkIcon,
   Slack,
   Twitter,
 } from 'lucide-react'
@@ -66,5 +66,5 @@ export const SOCIAL_PROVIDERS = {
 
 export const CLIPBOARD_PROVIDER = {
   provider: 'clipboard',
-  icon: <Link2Icon className="h-4 w-4" />,
+  icon: <LinkIcon className="h-4 w-4" />,
 }

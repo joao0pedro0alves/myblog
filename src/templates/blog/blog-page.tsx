@@ -6,7 +6,7 @@ import { Search } from '@/components/search'
 import { PostCard } from './components/post-card'
 import { PostGridCard } from './components/post-grid-card'
 
-export function BlogList() {
+export function BlogPage() {
   const router = useRouter()
 
   const query = router.query.q as string

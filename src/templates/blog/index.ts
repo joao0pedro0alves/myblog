@@ -1,2 +1,2 @@
-export * from './blog'
-export * from './blog-list'
+export * from './blog-page'
+export * from './post-page'

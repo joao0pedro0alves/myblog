@@ -1,5 +1,6 @@
 import { Inter, PT_Sans_Caption } from 'next/font/google'
 import type { ReactNode } from 'react'
+import { CallToAction } from '@/templates/landing-page/sections'
 import { Footer } from '../footer'
 import { Header } from '../header'
 import { ThemeProvider } from '../theme-provider'
@@ -33,6 +34,8 @@ export function Layout({ children }: LayoutProps) {
         <Header />
 
         <main className="flex-1 flex-col flex mt-10">{children}</main>
+
+        <CallToAction />
 
         <Footer />
       </div>
